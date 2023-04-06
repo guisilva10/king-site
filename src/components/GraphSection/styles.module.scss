@@ -1,0 +1,148 @@
+.graphsection {
+  padding-block: 100px;
+  max-width: 1440px;
+  margin-inline: auto;
+  color: #fff;
+  padding-inline: 230px;
+  display: flex;
+  align-items: flex-start;
+
+  @media only screen and (min-width: 1440px) {
+    padding-inline: 100px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    flex-direction: column;
+  }
+}
+
+.graphsection {
+  h2 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    max-width: 685px;
+    line-height: 45px;
+
+    span {
+    color: #007acc; 
+      
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 310px;
+      margin-inline: auto;
+    }
+  }
+
+  ul {
+    padding-top: 123px;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+
+    @media only screen and (max-width: 768px) {
+      padding-top: 33px;
+      gap: 50px;
+    }
+  }
+
+  li {
+    font-family: var(--ff-primary);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px;
+    color: #ffffff;
+    line-height: 38px;
+
+    span {
+    color: #007acc; 
+      
+      text-decoration: underline;
+    }
+
+    &::marker {
+      font-size: 32px;
+    color: #007acc; 
+      
+      margin: 0px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      background: #002e4d;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 26px;
+      font-size: 20px;
+      padding: 15px;
+      min-height: 144px;
+      max-width: 332px;
+      &::marker {
+        font-size: 0px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 0px;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.leftSide {
+  max-width: 607px;
+
+  @media only screen and (max-width: 768px) {
+    margin-inline: auto;
+  }
+}
+
+.rightSide {
+  margin-left: -100px;
+  opacity: 25%;
+
+  svg {
+    width: 320px;
+    height: 320px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileRightSide {
+  display: none;
+  margin-inline: auto;
+  opacity: 25%;
+  margin-top: -35px;
+  z-index: -1;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.mobileYLine {
+  display: none;
+  left: 50%;
+  top: 528px;
+  z-index: 194;
+  width: 3px;
+  height: 761px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(#110023, #007acc);
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}

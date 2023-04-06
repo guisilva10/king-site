@@ -1,0 +1,123 @@
+.depoimentSection {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.iconeRoxo {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.depoimentContainerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  font-family: var(--ff-primary);
+  h3 {
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    max-width: 685px;
+    line-height: 45px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 310px;
+      margin-inline: auto;
+    }
+  }
+}
+
+.depoimentContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media only screen and (max-width: 768px) {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+.contentDepoiment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  background: #131313;
+  border-radius: 10px;
+  padding-inline: 20px;
+  padding-block: 44px;
+  max-width: 610px;
+  transition: opacity 0.2s ease-in-out;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 340px;
+    height: 340px;
+  }
+}
+
+.userInfoBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+
+  img {
+    object-fit: cover;
+    border: 3px solid #ababab;
+    border-radius: 50%;
+  }
+}
+
+.userName {
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #797979;
+  }
+}
+
+.avaliationImgs {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.googleImage {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.avaliationDescriptions {
+  p {
+    line-height: 22px;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrowsMobile {
+  display: none;
+  align-items: center;
+  gap: 150px;
+  margin-inline: auto;
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+  }
+}
